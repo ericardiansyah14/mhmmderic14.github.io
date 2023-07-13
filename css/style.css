@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.bulat {
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-color: yellow;
+  float: right;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.teks {
+  padding-top: 15px;
+  position: absolute;
+  color: white;
+}
+.bulat-semua {
+  display: flex;
+}
+#home {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+}
+#home h3 {
+  font-size: 35px;
+  color: gold;
+  z-index: 2;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#home h4 {
+  color: gray;
+  z-index: 2;
+  padding-top: 5px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.img {
+  margin-bottom: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 5px solid gold;
+  border-top: 5px solid gold;
+  border-right: 5px solid darkturquoise;
+  border-bottom: 5px solid darkturquoise;
+  width: 108px;
+  height: 108px;
+  animation: mengambang 3s ease-out infinite;
+  transition: 0.4s;
+}
+.icon {
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.cat {
+  z-index: 0;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.cat img {
+  z-index: 0;
+  width: 270px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin-top: 120px;
+  animation: mengambang 3s ease-out infinite;
+}
+@keyframes mengambang {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #home h3 {
+    font-size: 28px;
+  }
+  .img {
+    margin-bottom: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid gold;
+    border-top: 5px solid gold;
+    border-right: 5px solid darkturquoise;
+    border-bottom: 5px solid darkturquoise;
+    width: 85px;
+    height: 85px;
+    animation: mengambang 4s ease-out infinite;
+    transition: 0.4s;
+    z-index: 5;
+  }
+  @keyframes mengambang {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .icon {
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+  .cat {
+    z-index: 0;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cat img {
+    z-index: 2;
+    width: 220px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    animation: mengambang 4s ease-out infinite;
+  }
+  #home h4 {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 5px;
+  }
+  .bulat-semua {
+    padding-top: 20px;
+  }
+  .bulat {
+    width: 25px;
+  }
+  .teks {
+    font-size: 10px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .img-about img {
+    border-radius: 50%;
+    z-index: 12;
+    margin-top: -100px;
+  }
+  .konten-kiri h4 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .konten-kiri p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .kotak-img img {
+    margin-left: 0px;
+    width: 90%;
+  }
+  .kotak-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+  }
+  .kotak {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+  }
+  .skills h5 {
+    font-size: px;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .kontak-utama {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.b {
+  background-color: white;
+}
+.c {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.c h3 {
+  padding-top: 55px;
+}
+.box {
+  display: flex;
+  margin-top: 30px;
+}
+.konten-kanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icons a {
+  padding: 10px 20px;
+  font-size: 25px;
+  color: black;
+}
+.sosmed:hover {
+  padding-top: 10px;
+}
+.konten-kiri,
+.konten-kanan {
+  margin: 60px 120px;
+}
+.konten-kiri {
+  width: 350px;
+}
+.konten-kiri h4 {
+  padding-top: 10px;
+}
+.v {
+  background-color: bisque;
+}
+.img-about img {
+  height: 390px;
+  padding-top: 30px;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kotak-img img {
+  width: 150px;
+  height: 110px;
+  margin-bottom: 6px;
+}
+.kotak-img {
+  margin-top: 60px;
+  margin-left: 70px;
+  border-bottom: 2px solid gold;
+  border-radius: 20px;
+  border-right: 2px solid gold;
+  width: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.16);
+  justify-content: center;
+}
+.kotak {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+}
+.skills h5 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kontak-utama {
+  display: flex;
+}
+.sosmed-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.p ul a {
+  padding: 8px 16px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 20px;
+}
+.kontak,
+.sosmed-me {
+  margin: 20px;
+}
+.kontak {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.kontak ul {
+  list-style: none;
+}
+.kontak ul a {
+  color: black;
+  text-decoration: none;
+}
+.kontak p {
+  padding-top: 5px;
+}
+.p ul a:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
